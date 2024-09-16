@@ -17,3 +17,4 @@ for i in range(len(numbers_)):
         elif chislo_ % a == 0:
             parol_.extend([numbers_[i], numbers_[j]])
 print(*parol_)
+

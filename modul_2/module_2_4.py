@@ -17,3 +17,4 @@ for i in range(len(numbers_)):
         not_primes_.append(numbers_[i])
 print('В исходном списке числа ',primes_,'являются простыми числами.')
 print('В исходном списке числа ',not_primes_,'являются составными числами.')
+
