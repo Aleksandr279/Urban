@@ -6,27 +6,31 @@ def  count_calls():
     calls_ += 1
 
 
-def string_info():
+def string_info(string_):
     count_calls()
-    l = input('Введите любой текст: ')
-    n = len(l)
-    m = l.upper()
-    s = l.lower()
-    string_ = (n, m, s)
-    print(string_)
+    n = len(string_)
+    m = string_.upper()
+    l = string_.lower()
+    tuple_ = (n, m, l)
+    print(tuple_)
+    return tuple_
 
 
-def  is_contains():
+def  is_contains(string_, list_to_search_):
     count_calls()
-    l = input('Введите любой текст ещё раз: ')
-    l = l.lower()
-    list_to_search_ = ['жить хорошо', 'хорошо жить ещё лучше', 'ничего не понимаю']
-    m = l in list_to_search_
-    string_ = (l, list_to_search_)
-    print(m)
+    string_ = string_.lower()
     print(string_)
+    a = -1
+    for i in (list_to_search_):
+        range(len(list_to_search_))
+        list_to_search_[a +1] = list_to_search_[a +1].lower()
+        a +=1
+    print(list_to_search_)
+    print(string_ in list_to_search_)
 
 
-print(string_info())
-print(is_contains())
-print(f'функции вызывались {calls_} раз')
+string_info('Еlephant')
+string_info('Сrocodile')
+is_contains('Жить ХОРОШО', ['жиТь хОрОшО', 'жить ЕЩЁ луЧше', 'неПОНИмаю'])
+is_contains('ХОРОШО Жить', ['жиТь хОрОшО', 'жить ЕЩЁ луЧше', 'неПОНИмаю'])
+print(f'функции вызывались {calls_} раза')
