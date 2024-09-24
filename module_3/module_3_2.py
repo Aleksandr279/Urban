@@ -13,26 +13,16 @@ def send_email(message_, recipient_, sender_="university.help@gmail.com"):
     print(string_b_)
     if print('@' in list_recipient_) and print('@' in list_sender_):
         for i in ['moc.', 'ur.', 'ten.']:
-            if string_a_ == i:
-                print('Yes')
+            a = 0
+            if string_a_ != i:
+                a += 1
                 break
+            print('a = ', a)
+            if a < 3:
+                print('Отправить письмо')
             else:
-                print('No')
+                print(f'Невозможно отправить письмо с адреса {sender_} на адрес {recipient_}')
 
-    # print(f'Невозможно отправить письмо с адреса {sender_} на адрес {recipient_}')
-    # range(len(list_))
-    # string_a_ == list_[a + 1]
-    # print('Yes')
-    # a += 1
-    # break
-
-    # elif print(string_a_ in list_) and print(string_b_ in list_):
-    # print('Yes')
-    # else:
-    # print(f'Невозможно отправить письмо с адреса {sender_} на адрес {recipient_}')
-
-    # print(sender_[:-5:-1])
-    # print(recipient_[:-5:-1])
 
 
 send_email('a', 'b2b@mail.ru')
