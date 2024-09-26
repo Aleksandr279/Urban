@@ -1,27 +1,13 @@
-def send_email(message_, recipient_, sender_="university.help@gmail.com"):
-    list_recipient_ = (list(recipient_))
-    list_sender_ = (list(sender_))
-    string_a_ = sender_[:-5:-1]
-    string_b_ = recipient_[:-5:-1]
-    if string_a_[-1] != '.':
-        string_a_ = string_a_[:-1]
-    if string_b_[-1] != '.':
-        string_b_ = string_b_[:-1]
-    print(list_sender_)
-    print(list_recipient_)
-    print(string_a_)
-    print(string_b_)
-    if print('@' in list_recipient_) and print('@' in list_sender_):
-        for i in ['moc.', 'ur.', 'ten.']:
-            a = 0
-            if string_a_ != i:
-                a += 1
-                break
-            print('a = ', a)
-            if a < 3:
-                print('Отправить письмо')
-            else:
-                print(f'Невозможно отправить письмо с адреса {sender_} на адрес {recipient_}')
+def send_email(message_, recipient_, sender_='university.help@gmail.com'):
+
+    if print(recipient_.endswith('@')) and print(sender_.endswith('@')):
+        print('Отправить письмо')
+    if print(recipient_.endswith('.com', -4, -1)) or print(recipient_.endswith('.ru', -3, -1)) or print(recipient_.endswith('.net', -4, -1)):
+        print('Отправить письмо')
+    if print(sender_.endswith('.com', -4, -1)) or print(sender_.endswith('.ru', -3, -1)) or print(sender_.endswith('.net', -4, -1)):
+        print('Отправить письмо')
+    else:
+        print(f'Невозможно отправить письмо с адреса {sender_} на адрес {recipient_}')
 
 
 
