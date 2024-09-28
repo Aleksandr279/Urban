@@ -10,3 +10,4 @@ def single_root_words_(root_word_, *other_words_):
 
 result_ = single_root_words_('Domiki','DOM', 'miKkI', 'Mik', 'Omiks', 'domikiti')
 print(result_)
+
