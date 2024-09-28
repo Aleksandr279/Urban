@@ -5,7 +5,6 @@ def get_multiplied_digits(number_):
     first_ = int(multi_number_[0])
     multi_number_.remove(multi_number_[0])
     a = 1
-    b = len(multi_number_)
     for i in multi_number_:
         if int(i) == 0:
             continue
