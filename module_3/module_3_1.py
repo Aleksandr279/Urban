@@ -24,7 +24,7 @@ def  is_contains(string_, list_to_search_):
     for i in (list_to_search_):
         range(len(list_to_search_))
         list_to_search_[a + 1] = list_to_search_[a + 1].lower()
-        a +=1
+        a +=  1
     print(list_to_search_)
     print(string_ in list_to_search_)
 
