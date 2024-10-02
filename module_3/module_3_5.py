@@ -15,3 +15,4 @@ def get_multiplied_digits(number_):
 
 result_ = get_multiplied_digits(40203)
 print(result_)
+
