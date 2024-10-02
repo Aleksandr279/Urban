@@ -1,23 +1,17 @@
 def get_multiplied_digits(number_):
     str_number_ = str(number_)
-    multi_number_ = []
-    multi_number_.extend(str_number_)
-    first_ = int(multi_number_[0])
-    multi_number_.remove(multi_number_[0])
-    for i in multi_number_:
-        if i == '0':
-            multi_number_.remove(i)
-        else:
-            continue
-    n = len(multi_number_)
+    first_ = int(str_number_[0])
+    str_number_ = str_number_.replace("0", "1")
+    n = len(str_number_)
     a = 1
-    if n == 0:
-        return first_
-    else:
-        for i in multi_number_:
+    if n != 0:
+        for i in str_number_[1:]:
             a *= int(i)
-        return first_ * a
+        return first_ * get_multiplied_digits(int(str_number_[1:]))
 
+    else:
+        return first_
+    
 
 result_ = get_multiplied_digits(40203)
 print(result_)
