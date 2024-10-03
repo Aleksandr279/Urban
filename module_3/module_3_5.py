@@ -11,7 +11,7 @@ def get_multiplied_digits(number_):
 
 result_1 = get_multiplied_digits(40203)
 result_2 = get_multiplied_digits(42300)
-result_3 = get_multiplied_digits(40)
+result_3 = get_multiplied_digits(4)
 result_4 = get_multiplied_digits(0)
 print(result_1)
 print(result_2)
