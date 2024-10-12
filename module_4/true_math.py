@@ -1,5 +1,6 @@
 from math import inf
 
+
 def divide(first, second):
     if second == 0:
         return inf
@@ -14,5 +15,5 @@ print(result_1)
 print(result_2)
 print(result_3)
 
-if __name__ == '__divide__':
-    divide()
+if __name__ == "__main__":
+    main()
